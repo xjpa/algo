@@ -1,0 +1,77 @@
+# Site settings
+site: Algorithms
+title: Algorithms
+keywords: john patrick amata, john amata, blog, algorithms
+description: >-
+  my daily journal about programming and the daily grind
+lang: en-US
+# timezone:
+# google_verify: XXX # Google Verification
+google_analytics: # UA-XXXXXXXX-00 # Google Analytics code
+# discus-identifier: XXX
+
+# Author settings
+author:
+  name: John Patrick Amata
+  bio: my blog for algorithms
+  picture: assets/images/profile.jpeg
+  github: xjpa
+  # twitter:
+  # facebook:
+  # instagram:
+  # youtube:
+  # linkedin:
+  # email:
+
+# URL settings
+baseurl: '/'
+url: 'http://algo.johnamata.com'
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+paginate: 100
+paginate_path: '/page/:num'
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: 'default'
+  - scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+
+relative_links:
+  enabled: true
+  collections: false
