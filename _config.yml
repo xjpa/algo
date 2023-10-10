@@ -24,8 +24,8 @@ author:
   # email:
 
 # URL settings
-baseurl: '/'
-url: 'http://algo.johnamata.com'
+baseurl: ''
+url: 'https://algo.johnamata.com'
 permalink: pretty
 markdown: kramdown
 kramdown:

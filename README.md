@@ -1,1 +1,1 @@
-blog published at johnamata.github.io/champion
+blog published at algo.johnamata.com
